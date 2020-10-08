@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     paddingTop: 40,
     elevation: 5,
     position: "absolute",
+    zIndex: 10,
   },
   topElements: {
     flex: 1,
