@@ -11,12 +11,8 @@ const Routes = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        headerMode='none'
-        screenOptions={{
-          cardStyle: {
-            backgroundColor: "#407BFF",
-          },
-        }}
+        initialRouteName='Landing'
+        screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name='Landing' component={Landing} />
         <Stack.Screen name='Catalog' component={Catalog} />

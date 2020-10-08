@@ -1,22 +1,26 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, View } from "react-native";
 import Routes from "./src/Routes";
+import { AppLoading } from "expo";
+import {
+  Poppins_400Regular,
+  Poppins_600SemiBold,
+  useFonts,
+} from "@expo-google-fonts/dev";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Routes />
-      <StatusBar style='auto' />
-    </View>
-  );
+  let [fontsLoaded] = useFonts({
+    Poppins_400Regular,
+    Poppins_600SemiBold,
+  });
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return (
+      <>
+        <Routes />
+        <StatusBar style='light' backgroundColor='#2980b9' />
+      </>
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#407BFF",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
