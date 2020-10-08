@@ -17,7 +17,7 @@ const ProductDetails = () => {
   return (
     <div className='product-details-container'>
       <div className='card-base border-radius-20 product-details'>
-        <Link to='/products' className='product-details-goback'>
+        <Link to='/products' className='product-details-goback d-inline-flex'>
           <ArrowIcon className='icon-goback' />
           <h1 className='text-goback'>voltar</h1>
         </Link>
