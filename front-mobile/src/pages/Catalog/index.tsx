@@ -1,15 +1,22 @@
 import React from "react";
-import { View, Image, TextInput, Text } from "react-native";
+import {
+  View,
+  Image,
+  TextInput,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+} from "react-native";
+import { RectButton } from "react-native-gesture-handler";
 import { FontAwesome5 as Icon } from "@expo/vector-icons";
 
-import loginImage from "../../images/login.png";
+import productImage from "../../images/product.png";
 
 import styles from "./styles";
-import { RectButton } from "react-native-gesture-handler";
 
 const Catalog = () => {
   return (
-    <View style={styles.container}>
+    <>
       <View style={styles.filterContainer}>
         <View style={styles.topElements}>
           <View>
@@ -70,10 +77,75 @@ const Catalog = () => {
           </View>
         </View>
       </View>
-      <View style={styles.cardsContainer}>
-        <Image source={loginImage} style={styles.imageStyle} />
-      </View>
-    </View>
+      <ScrollView
+        contentContainerStyle={{
+          paddingHorizontal: 4,
+          paddingBottom: 8,
+        }}
+      >
+        <View style={{ marginTop: 275 }}></View>
+        <View style={styles.cardsContainer}>
+          <TouchableOpacity
+            onPress={() => null}
+            activeOpacity={0.5}
+            style={styles.button}
+          >
+            <Image source={productImage} style={styles.productImageStyle} />
+            <Text style={styles.buttonText}>
+              Computador Desktop - Intel Core i7
+            </Text>
+            <View style={styles.priceContainer}>
+              <Text style={styles.currency}>R$</Text>
+              <Text style={styles.price}>2.779,00</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => null}
+            activeOpacity={0.5}
+            style={styles.button}
+          >
+            <Image source={productImage} style={styles.productImageStyle} />
+            <Text style={styles.buttonText}>
+              Computador Desktop - Intel Core i7
+            </Text>
+            <View style={styles.priceContainer}>
+              <Text style={styles.currency}>R$</Text>
+              <Text style={styles.price}>2.779,00</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.cardsContainer}>
+          <TouchableOpacity
+            onPress={() => null}
+            activeOpacity={0.5}
+            style={styles.button}
+          >
+            <Image source={productImage} style={styles.productImageStyle} />
+            <Text style={styles.buttonText}>
+              Computador Desktop - Intel Core i7
+            </Text>
+            <View style={styles.priceContainer}>
+              <Text style={styles.currency}>R$</Text>
+              <Text style={styles.price}>2.779,00</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => null}
+            activeOpacity={0.5}
+            style={styles.button}
+          >
+            <Image source={productImage} style={styles.productImageStyle} />
+            <Text style={styles.buttonText}>
+              Computador Desktop - Intel Core i7
+            </Text>
+            <View style={styles.priceContainer}>
+              <Text style={styles.currency}>R$</Text>
+              <Text style={styles.price}>2.779,00</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
+    </>
   );
 };
 
