@@ -1,12 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  //   container: {
-  //     flex: 1,
-  //     width: "100%",
-  //     justifyContent: "center",
-  //     alignItems: "center",
-  //   },
   filterContainer: {
     flex: 1,
     width: "100%",
@@ -83,37 +77,37 @@ const styles = StyleSheet.create({
   },
   cardsContainer: {
     flex: 1,
-    flexDirection: "row",
-    width: "100%",
+    marginHorizontal: 5,
     marginVertical: 10,
   },
   button: {
-    height: 250,
-    width: "48%",
+    height: 280,
+    width: "96%",
     borderRadius: 8,
     alignItems: "center",
     justifyContent: "space-around",
-    paddingLeft: 10,
-    paddingVertical: 10,
+    paddingHorizontal: 5,
+    paddingVertical: 50,
     marginLeft: 5,
     backgroundColor: "#fff",
   },
   productImageStyle: {
     width: 150,
-    height: 120,
+    height: 150,
+    marginBottom: 80,
   },
   buttonText: {
     fontFamily: "Poppins_600SemiBold",
     color: "#121212",
     fontSize: 16,
     textAlign: "center",
-    paddingTop: 20,
-    borderTopWidth: 1,
-    borderTopColor: "#121212",
+    paddingTop: 40,
+    marginBottom: 80,
     width: "90%",
   },
   priceContainer: {
     flexDirection: "row",
+    marginVertical: 25
   },
   currency: {
     marginRight: 5,
