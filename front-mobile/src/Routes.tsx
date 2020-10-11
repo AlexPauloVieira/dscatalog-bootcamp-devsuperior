@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Landing from "./pages/Landing";
 import Catalog from "./pages/Catalog";
+import ProductDetails from "./pages/ProductDetails";
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ const Routes = () => {
       >
         <Stack.Screen name='Landing' component={Landing} />
         <Stack.Screen name='Catalog' component={Catalog} />
+        <Stack.Screen name='ProductDetails' component={ProductDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );

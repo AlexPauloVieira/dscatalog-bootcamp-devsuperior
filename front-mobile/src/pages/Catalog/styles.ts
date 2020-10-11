@@ -15,15 +15,16 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   textStyle: {
-    paddingLeft: 40,
+    paddingLeft: 30,
     fontSize: 28,
+    marginRight: '10%',
     color: "#fff",
     fontFamily: "Poppins_600SemiBold",
   },
   topRightElements: {
     flex: 1,
-    marginLeft: 60,
-    marginTop: 15,
+    marginLeft: 20,
+    marginTop: 10,
   },
   iconStyle: {
     marginBottom: 5,
@@ -32,16 +33,12 @@ const styles = StyleSheet.create({
   iconsContainer: {
     flexDirection: "row",
     justifyContent: "flex-start",
-    marginLeft: 20,
+    marginLeft: '10%',
   },
   totalProducts: {
     fontSize: 16,
     color: "#fff",
     fontFamily: "Poppins_400Regular",
-  },
-  imageStyle: {
-    width: 300,
-    height: 300,
   },
   inputsContainer: {
     flex: 1,
@@ -50,13 +47,13 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 45,
-    width: 290,
+    width: 300,
     backgroundColor: "#fff",
     borderBottomLeftRadius: 10,
     borderTopLeftRadius: 10,
     justifyContent: "center",
     paddingHorizontal: 16,
-    marginLeft: 40,
+    marginLeft: 30,
     marginVertical: 5,
   },
   searchCategory: {
@@ -81,20 +78,20 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   button: {
-    height: 280,
+    height: 350,
     width: "96%",
     borderRadius: 8,
     alignItems: "center",
     justifyContent: "space-around",
     paddingHorizontal: 5,
-    paddingVertical: 50,
-    marginLeft: 5,
+    paddingVertical: 75,
+    marginLeft: 4.5,
     backgroundColor: "#fff",
   },
   productImageStyle: {
-    width: 150,
-    height: 150,
-    marginBottom: 80,
+    width: '95%',
+    height: '85%',
+    marginBottom: 100,
   },
   buttonText: {
     fontFamily: "Poppins_600SemiBold",
@@ -102,12 +99,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: "center",
     paddingTop: 40,
-    marginBottom: 80,
+    marginBottom: 60,
     width: "90%",
   },
   priceContainer: {
     flexDirection: "row",
-    marginVertical: 25
+    marginTop: 45
   },
   currency: {
     marginRight: 5,
