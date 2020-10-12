@@ -29,7 +29,7 @@ const ProductDetails = () => {
             <h1 className='product-details-name'>
               Computador Desktop - Intel Core i7
             </h1>
-            <ProducPrice price='2.779,00' />
+            <ProducPrice price={2779} />
           </div>
           <div className='col-6 product-details-card'>
             <h1 className='product-description-title'>Descrição do Produto</h1>
