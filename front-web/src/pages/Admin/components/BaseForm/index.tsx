@@ -20,13 +20,13 @@ const BaseForm = ({ title, children }: Props) => {
         {children}
         <div className='base-form-actions'>
           <button
-            className='btn btn-outline-danger border-radius-10 mr-3'
+            className='btn btn-outline-danger border-radius-10 mr-3 btn-baseform'
             onClick={handleCancel}
           >
             CANCELAR
           </button>
-          <button className='btn btn-primary border-radius-10'>
-            CADASTRAR
+          <button className='btn btn-primary border-radius-10 btn-baseform'>
+            SALVAR
           </button>
         </div>
       </div>
