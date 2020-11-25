@@ -6,10 +6,10 @@ import Card from "../Card";
 import Pagination from "core/components/Pagination";
 import { toast } from "react-toastify";
 import swal from "@sweetalert/with-react";
+import ProductCardLoader from "../Loaders/ProductCardLoader";
 
 const List = () => {
   const [productsResponse, setProductsReponse] = useState<ProductsResponse>();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isLoading, setIsLoading] = useState(false);
   const [activePage, setActivePage] = useState(0);
   const history = useHistory();
@@ -66,9 +66,13 @@ const List = () => {
         ADICIONAR
       </button>
       <div className='admin-list-container'>
-        {productsResponse?.content.map((product) => (
-          <Card key={product.id} product={product} onRemove={onRemove} />
-        ))}
+        {isLoading ? (
+          <ProductCardLoader />
+        ) : (
+          productsResponse?.content.map((product) => (
+            <Card key={product.id} product={product} onRemove={onRemove} />
+          ))
+        )}
         {productsResponse && (
           <Pagination
             totalPages={productsResponse.totalPages}
